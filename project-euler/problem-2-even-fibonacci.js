@@ -9,7 +9,7 @@ function solve(n) {
 
 function generateFibNumsLessThanN(n) {
   const fibs = [1, 2]
-  while (fibs[fibs.length - 1] < n || !ready) {
+  while (fibs[fibs.length - 1] < n) {
     const nextFib = fibs[fibs.length - 1] + fibs[fibs.length - 2]
     if (nextFib < n) {
       fibs.push(nextFib)
